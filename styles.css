@@ -1,0 +1,140 @@
+/*
+Setjum inn „reset“ sem fjarlægir margin og padding af öllu
+Þessu má ekki breyta
+*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+  Reiknum stærð á öllum boxum sem border-box.
+  Þessu má breyta eða fjarlægja.
+  */
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+
+
+
+
+  }
+  
+  /* og látum erfast á allt */
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+  
+  /* Uppsetning á síðu—layout */
+  .content {
+    /* Lætur börn .content raða sér með _flexbox_ */
+    display: flex;
+    /* röðun sé í dálkaröð (niður) */
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content > header {
+    max-width: 1200px;
+    background-color: #00bfff;
+    font-weight: 400;
+
+
+  }
+  
+  
+
+  header h1 {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1200px;
+    background-color: #00bfff;
+  }
+  
+  .content > nav {
+    margin: 1rem;
+    padding: 16px;
+    max-width: 1200px;
+    text-decoration: underline;
+  }
+  
+  .content > main {
+    /* Lætur <main> taka allt auka pláss sem er í boði */
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    padding: 16px;
+  }
+  
+  .content > footer {
+    background-color: #00bfff;
+    font-weight: 400;
+  }
+
+  footer h1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #00bfff;
+  }
+  
+  /* almennar skilgreiningar */
+  
+  h1, h2 {
+    /* TODO setja almennar skilgreinar fyrir fyrirsagnir */
+  }
+  
+  a {
+    /* TODO setja almennar skilgreinar fyrir tengla */
+  }
+  
+  /* nav — valmynd */
+  
+  nav ul {
+    /* TODO */
+  }
+  
+  nav ul li {
+    display: inline-block;
+    /* TODO */
+  }
+  
+  /* TODO */
+  
+  
+  /* main — meginmál */
+  
+  /* TODO */
+  
+  /* töflur */
+  style
+  table {
+    border-spacing: 1px;
+    padding: 4px;
+  }
+  tr:nth-child(2n+2) {
+    background-color: #afebff;
+  }
+  
+  /* TODO */
+  
+  /* form */
+
+  /* TODO */
+
+
+  
